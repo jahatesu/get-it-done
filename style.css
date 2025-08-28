@@ -73,3 +73,15 @@ span{
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.task-item{
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
