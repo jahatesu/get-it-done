@@ -1,1 +1,113 @@
 /* LANDING PAGE */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+header a.nav:hover{
+    color: #a96bfa;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+nav.menu {
+    display: flex;
+    gap: 35px;
+    padding: 20px 30px;
+}
+
+.logo-img{
+    height: 40px;
+    width: auto;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+
+a.logo{
+    color: black;
+    font-size:x-large;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-btn{
+    font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 2rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.nav-btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #a96bfa;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+.nav-btn span:nth-child(6) {
+  position: relative;
+}
+
+.nav-btn span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.nav-btn span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.nav-btn span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.nav-btn span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.nav-btn span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.nav-btn:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.container-hero-section{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 2px 20px;
+}
