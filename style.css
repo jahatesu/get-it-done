@@ -35,13 +35,13 @@ h1{
     gap: 10px;
 }
 
-input{
+.input{
     flex: 1;
-    padding: 9px 12px;
+    padding: 11px 12px;
     border: 1px solid #ccc;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 13px;
     outline: none;
 }
 
@@ -67,7 +67,7 @@ input[type="text"]::placeholder{
     background-color: #bf4342;
 }
 
-span{
+.no-task{
     color: #ef6351;
     font-size: 13px;
     font-weight: bold;
@@ -75,13 +75,30 @@ span{
 }
 
 .task-item{
-    background-color: #fff;
+    background-color: rgb(211, 208, 208);
     padding: 10px 15px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 8px;
+    /* font-size: 14px; */
+    border-radius: 20px;
+}
+
+span{
+    font-size: 13px;
+    text-align: left;
+    word-break: break-word;
+    flex: 1;
+    margin-left: 10px;
+    color: #333;
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
 }
