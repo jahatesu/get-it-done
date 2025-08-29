@@ -1,3 +1,4 @@
+// MAIN TO DO LIST FUNCTIONALITY
 const input = document.querySelector("input")
 const add = document.querySelector(".btn")
 const taskList = document.querySelector(".task-list")

@@ -1,2 +1,28 @@
 .history/
 .vscode/
+
+# Node modules (if you use npm later)
+node_modules/
+
+# Build and cache files
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables (if you add APIs later)
+.env
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE/Editor settings
+.vscode/
+.idea/
