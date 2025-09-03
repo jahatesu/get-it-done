@@ -1,66 +1,304 @@
-<!-- LANDING PAGE -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get It Done! A simple and smart task manager." />
-  <meta name="keywords" content="To-do app, Task manager, Productivity tool" />
-  <meta name="author" content="Janna Andrea G. Justiniano" />
-  <link rel="stylesheet" href="css\landing.css" />
-  <title>Get It Done!</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get It Done! A simple and smart task manager."
+    />
+    <meta
+      name="keywords"
+      content="To-do app, Task manager, Productivity tool"
+    />
+    <meta name="author" content="Janna Andrea G. Justiniano" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
+    <title>Quickee - Feel Accomplished Every Day</title>
+  </head>
 
-  <header>
-    <div class="container-header">
-      <a href="#" class="logo">
-        <img class="logo-img" src="images\to-do-logo.png" alt="Get It Done Logo" />
-        Get It Done!
-      </a>
-      <nav class="menu">
-        <a class="nav" href="#home">Home</a>
-        <a class="nav" href="#about">About</a>
-        <a class="nav" href="#features">Features</a>
-        <button class="nav-btn">
-         <span class="circle1"></span>
-         <span class="circle2"></span>
-         <span class="circle3"></span>
-         <span class="circle4"></span>
-         <span class="circle5"></span>
-         <span class="text">Register</span>
-        </button>
-      </nav>
-    </div>
-  </header>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            class="logo-img"
+            src="images\to-do-logo.svg"
+            alt="Get It Done Logo"
+          />
+          <span class="logo-text">Quickee</span>
+        </a>
+        <nav class="nav">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
 
-  <main>
-    <section class="hero">
-      <div class="container-hero-section">
-        <!-- Left side -->
-        <div class="hero-details">
-          <h2>Feel accomplished every day</h2>
-          <p>Stay focused and achieve more with Get It Done — the easiest way to organize your life.</p>
-          <div class="cta-buttons">
-            <button class="primary-btn">Start Organizing Now!</button>
-            <button class="secondary-btn">Sign Up with Google</button>
-          </div>
-          <p class="trust-note">Join 2,000+ users already getting things done faster.</p>
+          <button class="nav-btn">
+            <span class="btn-text">Get Started</span>
+            <svg
+              class="btn-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12H19M19 12L12 5M19 12L12 19"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- hero contents -->
+    <main>
+      <section class="hero">
+        <div class="hero-blobs">
+          <div class="blob blob-left"></div>
+          <div class="blob blob-right"></div>
+          <div class="blobY blob-bottom"></div>
         </div>
-        <!-- Right side -->
-        <div class="hero-image">
-          <img src="images/app-preview.png" alt="Get It Done app preview" />
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                Get Things Done in a Quickee
+              </h1>
+              <p class="hero-description">
+                Stop feeling overwhelmed. Start feeling accomplished. Quickee helps you organize your life with smart task management
+                that actually works.
+              </p>
+              <div class="hero-buttons">
+                <button class="btn-primary">
+                  <span>Start Free Today</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 12H19M19 12L12 5M19 12L12 19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="btn-secondary">
+                  <svg
+                    class="google-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#4285F4"
+                      d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                    />
+                    <path
+                      fill="#34A853"
+                      d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                    />
+                    <path
+                      fill="#FBBC05"
+                      d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                    />
+                    <path
+                      fill="#EA4335"
+                      d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                    />
+                  </svg>
+                  <span>Continue with Google</span>
+                </button>
+              </div>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number">10K+</span>
+                  <span class="stat-label">Happy Users</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">50K+</span>
+                  <span class="stat-label">Tasks Completed</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">4.9★</span>
+                  <span class="stat-label">User Rating</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="app-mockup">
+                <img
+                  src="/images/app-preview.jpg"
+                  alt="Get It Done app preview"
+                />
+                <div class="floating-card card-1">
+                  <div class="task-item">
+                    <div class="task-check"></div>
+                    <span>Morning workout ✓</span>
+                  </div>
+                </div>
+                <div class="floating-card card-2">
+                  <div class="task-item">
+                    <div class="task-check active"></div>
+                    <span>Team meeting at 2pm</span>
+                  </div>
+                </div>
+                <div class="floating-card card-3">
+                  <div class="productivity-badge">
+                    <span class="badge-text">+5 tasks completed today!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Everything you need to stay organized</h2>
+            <p class="section-description">
+              Powerful features designed to help you accomplish more with less
+              stress
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Smart Task Organization</h3>
+              <p class="feature-description">
+                Automatically categorize and prioritize your tasks with
+                AI-powered suggestions
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Time Tracking</h3>
+              <p class="feature-description">
+                Track how long tasks take and optimize your productivity
+                patterns
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7ZM23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Team Collaboration</h3>
+              <p class="feature-description">
+                Share tasks and projects with your team for seamless
+                collaboration
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <img
+                class="logo-img"
+                src="images\to-do-logo.svg"
+                alt="Quickee Logo"
+              />
+              <span class="logo-text">Quickee</span>
+            </div>
+            <p class="footer-description">
+              Making productivity simple and achievable for everyone.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="link-group">
+              <h4 class="link-title">Product</h4>
+              <a href="#" class="footer-link">Features</a>
+              <a href="#" class="footer-link">Pricing</a>
+              <a href="#" class="footer-link">Download</a>
+            </div>
+            <div class="link-group">
+              <h4 class="link-title">Company</h4>
+              <a href="#" class="footer-link">About</a>
+              <a href="#" class="footer-link">Blog</a>
+              <a href="#" class="footer-link">Careers</a>
+            </div>
+            <div class="link-group">
+              <h4 class="link-title">Support</h4>
+              <a href="#" class="footer-link">Help Center</a>
+              <a href="#" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">Privacy</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Get It Done! All rights reserved.</p>
         </div>
       </div>
-    </section>
-  </main>
-  <!--
-  <footer>
-    <div class="footer">
-      <p>&copy; 2025 Get It Done! All rights reserved.</p>
-    </div>
-  </footer>
-  -->
-
-</body>
+    </footer>
+  </body>
 </html>
