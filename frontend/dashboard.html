@@ -1,0 +1,28 @@
+<!-- MAIN TO DO LIST PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Get it done!</h1>
+
+      <!-- Form to add tasks -->
+      <form id="task-form" class="input-group">
+        <input id="task-input" class="input" type="text" placeholder="Add a new task..." required />
+        <button class="btn" type="submit">Add</button>
+      </form>
+
+      <!-- Task list -->
+      <ul class="task-list" id="task-list">
+        <span class="no-task" id="no-tasks">No tasks yet..</span>
+      </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
